@@ -8,5 +8,5 @@ Högst en sida.
 |-----|--------|
 | A   | Cirka 30       |
 | B   |   cirka 2 timmar       |
-| C   |        |
-| D   |        |
+| C   |  cirka 5 timmar       |
+| D   |    |

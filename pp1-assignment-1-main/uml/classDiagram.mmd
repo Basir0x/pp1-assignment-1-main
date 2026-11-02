@@ -1,0 +1,48 @@
+classDiagram
+    direction TB
+
+    class Zone {
+        -int number
+        -String name
+        +Zone(int number, String name)
+        +int getNumber()
+        +String getName()
+        +String toString()
+    }
+
+    class Trip {
+        -Zone from
+        -Zone to
+        +Trip(Zone from, Zone to)
+        +Zone getFrom()
+        +Zone getTo()
+        +int getPrice()
+        +String toString()
+    }
+
+    class TravelCard {
+        -int number
+        -int balance
+        -int tripCount
+        -Trip lastTrip
+        -static int nextNumber
+        +static final int MAX_BALANCE = 200
+        +TravelCard()
+        +boolean topUp(int amount)
+        +boolean pay(int amount)
+        +boolean travel(Trip trip)
+        +int getNumber()
+        +int getBalance()
+        +int getTripCount()
+        +Trip getLastTrip()
+        +static int getIssuedCount()
+        +String toString()
+    }
+
+%% Relationer (linjer)
+%% TravelCard har en referens till Trip
+    TravelCard --> "0..1" Trip : lastTrip
+
+%% Trip har referenser till två Zone-objekt (from och to)
+    Trip --> "1" Zone : from
+    Trip --> "1" Zone : to

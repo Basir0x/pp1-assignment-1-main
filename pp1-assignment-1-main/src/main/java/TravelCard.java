@@ -27,4 +27,30 @@ public class TravelCard {
         return nextNumber - 1001;
     }
 
+    public boolean topUp(int amount) {
+        if (amount <= 0) {
+            return false;
+        }
+        if (balance + amount > MAX_BALANCE) {}
+        return false;
+    }
+
+
+
+
+    public boolean pay(int amount) {
+        if (balance <= 0 ) {
+            return false;
+        }
+        if (amount > balance) {
+            return false;
+        }
+
+    }
+
+    public boolean travel
+
+
+
+
 }

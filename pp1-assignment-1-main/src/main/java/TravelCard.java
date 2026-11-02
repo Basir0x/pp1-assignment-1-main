@@ -26,7 +26,7 @@ public class TravelCard {
     public static int getIssuedCount(){
         return nextNumber - 1001;
     }
-
+    //topUp
     public boolean topUp(int amount) {
         if (amount <= 0) {
             return false;
@@ -34,10 +34,7 @@ public class TravelCard {
         if (balance + amount > MAX_BALANCE) {}
         return false;
     }
-
-
-
-
+    //pay
     public boolean pay(int amount) {
         if (balance <= 0 ) {
             return false;
@@ -45,12 +42,24 @@ public class TravelCard {
         if (amount > balance) {
             return false;
         }
+        balance -= amount;
+        return true;
 
     }
+    //travel
+    public boolean Travel(Trip trip) {
+       if (trip == null) {
+           return false;
 
-    public boolean travel
+       }
+       //använd pay för att inte upprepa kod
+        if (!pay(trip.getPrice())) {
+            return false;
+        }
 
 
 
+
+    }
 
 }

@@ -13,3 +13,4 @@ void main() {
     replace(k);
     IO.println(k.getBalance());
 }
+

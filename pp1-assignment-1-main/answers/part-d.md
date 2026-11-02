@@ -13,7 +13,13 @@ Då kunde vem som heslt skriva till exampel "kort1.setBalance("-1000")
 eller kort1.setBalance(60000000000). inkapsulen skulle vara bruten eftersom 
 klasen inte längre följer reglerna. 
 
-3. 
+3. balance tillhör ett enskilt objekt pgv att varje kort ska ha sin egen 
+unika summa. om det skulle vara så att balancen var static all kort delade på
+samma saldo. 
+nextNumber fungerar som en gemensam räknare för att varje nytt kort skulle 
+få en unik nummer. det behövs inte att den ska vara private. 
+
+4. 
 
 
 ## Tidsåtgång (fråga 5)

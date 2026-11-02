@@ -52,14 +52,27 @@ public class TravelCard {
            return false;
 
        }
+
        //använd pay för att inte upprepa kod
         if (!pay(trip.getPrice())) {
             return false;
         }
 
+        tripCount++;
+        lastTrip = trip;
+        return true;
 
+    }
 
-
+    @Override
+    public String toString() {
+        String tripText;
+        if (lastTrip == null) {
+            tripText = " ingen resa ännu";
+        } else {
+            tripText = "senast" + lastTrip.toString();
+        }
+        return "kort" + number + ":" + balance + "euro" + tripCount +  "resor" + tripText;
     }
 
 }

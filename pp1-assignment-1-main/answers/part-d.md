@@ -6,7 +6,7 @@ Högst en sida.
 
 | Del | Timmar |
 |-----|--------|
-| A   |        |
-| B   |        |
+| A   | Cirka 30       |
+| B   |   cirka 2 timmar       |
 | C   |        |
 | D   |        |

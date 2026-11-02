@@ -11,3 +11,5 @@ Lägg foton eller en skanning av dina minnesbilder i mappen `answers/part-b/`.
 
 
 ![Minnesbild 1](part-b/b1.jpeg)
+![Minnesbild 2](part-b/b2.jpeg)
+![Minnesbild 3](part-b/b3b4.jpeg)

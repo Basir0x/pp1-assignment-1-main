@@ -19,7 +19,12 @@ samma saldo.
 nextNumber fungerar som en gemensam räknare för att varje nytt kort skulle 
 få en unik nummer. det behövs inte att den ska vara private. 
 
-4. 
+4. det finns bara ett trip object, när man kör till ex "Trip trip = new Trip(Centrum,stocholm); "
+skapas ett objekt. både ada och bo "ada.travel(trip), bo.travel(trip)" pekar bara till ett objekt.
+IO.printIn(ada,getlastTrip() == bo.getlastTrip()) skrivet ut true. 
+nej ingen kan ändra det , klassen Trip använder "private final" en resa kan inte ändras.
+
+5. del c är svårast, men inline autocoding hjälper ganska mycket. 
 
 
 ## Tidsåtgång (fråga 5)

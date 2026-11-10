@@ -20,7 +20,7 @@ public class TravelCard {
 
     public int getNumber() { return number; }
     public int getBalance() { return balance; }
-    public int gettripCount() {return tripCount; }
+    public int getTripCount() {return tripCount; }
     public Trip getLastTrip() { return lastTrip; }
 
     public static int getIssuedCount(){
@@ -47,7 +47,7 @@ public class TravelCard {
 
     }
     //travel
-    public boolean Travel(Trip trip) {
+    public boolean travel(Trip trip) {
        if (trip == null) {
            return false;
 

@@ -17,14 +17,14 @@ void main() {
 
     Trip t1 = new Trip(centrum, centrum);
     Trip t2 = new Trip(centrum, hamnen);
-    IO.println("Resa 1: " + kort1.Travel(t1));
-    IO.println("Resa 2: " + kort2.Travel(t2));
+    IO.println("Resa 1: " + kort1.travel(t1));
+    IO.println("Resa 2: " + kort2.travel(t2));
     IO.println(kort1);
 
     //misslyckad resa pgv låg saldo
 
     Trip t3 = new Trip(centrum, hamnen);
-    IO.println("kort 2 resor: " + kort2.Travel(t3));
+    IO.println("kort 2 resor: " + kort2.travel(t3));
     IO.println(kort2);
 
     //ogiltig belopp

@@ -31,12 +31,15 @@ public class TravelCard {
         if (amount <= 0) {
             return false;
         }
-        if (balance + amount > MAX_BALANCE) {}
-        return false;
+        if (balance + amount > MAX_BALANCE) {
+            return false;
+        }
+        balance += amount;
+        return true;
     }
     //pay
     public boolean pay(int amount) {
-        if (balance <= 0 ) {
+        if (amount <= 0) {
             return false;
         }
         if (amount > balance) {
